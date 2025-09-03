@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import logo from "./photos/DigitalLogo.png"
+import logo from "./photos/digitallogo.png"
 
 const Footer = () => {
   return (
