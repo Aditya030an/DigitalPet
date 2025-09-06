@@ -15,12 +15,18 @@ import b43 from "./photos/b43.mp4";
 import Exotic from "./photos/Exotic.png";
 import Exotic1 from "./photos/Exotic petsCat FUNGAL.jpg";
 import Exotic2 from "./photos/Exotic petsALOPECIA AREATA 2.jpg";
+import Exotic3 from "./photos/Exotic petsBeagle.jpg";
+import Exotic4 from "./photos/Exotic petsHypo A.png";
 import b44 from "./photos/b44.mp4";
 import bvideo from "./photos/b2video.mp4";
 import b45 from "./photos/b46.mp4";
 import b47 from "./photos/b47.mp4";
 import video1 from "./photos/video8.mp4";
 import video2 from "./photos/video9.mp4";
+import video3 from "./photos/video7.mp4";
+import video4 from "./photos/video6.mp4";
+import video5 from "./photos/video5.mp4";
+import video6 from "./photos/video4.mp4";
 import video33 from "./photos/bird44.mp4"
 import bb34 from "./photos/bb34.mp4"
 const images = [
@@ -31,12 +37,18 @@ const images = [
 
   { type: "video", src: video1, alt: "In Cognita" }, 
   { type: "video", src: video2, alt: "In Cognita" }, 
+  { type: "video", src: video3, alt: "In Cognita" }, 
+  { type: "video", src: video4, alt: "In Cognita" }, 
+  { type: "video", src: video5, alt: "In Cognita" }, 
+  { type: "video", src: video6, alt: "In Cognita" }, 
 
   { type: "image", src: ba25, alt: "In Cognita" },
   { type: "image", src: ba26, alt: "In Cognita" },
   { type: "image", src: Exotic, alt: "In Cognita" },
   { type: "image", src: Exotic1, alt: "In Cognita" },
   { type: "image", src: Exotic2, alt: "In Cognita" },
+  { type: "image", src: Exotic3, alt: "In Cognita" },
+  { type: "image", src: Exotic4, alt: "In Cognita" },
   { type: "image", src: ba13, alt: "In Cognita" },
   { type: "image", src: ba15, alt: "Spellverse" },
   { type: "image", src: ba17, alt: "In Cognita" },

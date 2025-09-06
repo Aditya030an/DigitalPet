@@ -1,5 +1,6 @@
 
-import vet1 from "./photos/bgvideo.mp4";
+// import vet1 from "./photos/bgvideo.mp4";
+import vet1 from "./photos/bgvideo2.mp4";
 import { motion } from "framer-motion";
 
 const Landingpage = () => {
