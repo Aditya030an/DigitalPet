@@ -15,6 +15,7 @@ import Confirmation from "./Component/success.jsx"
 import PaymentFailed from "./Component/fail.jsx"
 import Rateus from './Component/Rateus.jsx';
 import Services from './Component/Services.jsx';
+import ReturnPolicy from './Component/ReturnPolicy.jsx';
 function App() {
   return (
     <FeedbackProvider>
@@ -31,6 +32,7 @@ function App() {
             <Route path="/BookConsultation" element={<BookConsultation />} /> 
             <Route path="/Terms" element={<Terms />} />
             <Route path="/Privacy" element={<Privacy />} /> 
+            <Route path="/Return" element={<ReturnPolicy />} /> 
             <Route path="/payment-success" element={<Confirmation />} />
             <Route path="/payment-fail" element={<PaymentFailed />} />
             <Route path="/Services" element={<Services />} />

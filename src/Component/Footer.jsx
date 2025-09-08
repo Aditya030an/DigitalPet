@@ -95,6 +95,12 @@ const Footer = () => {
                     >
                       Privacy Policy
                     </a>
+                    <a
+                      href="/Return"
+                      className="text-gray-600 font-[lato] text-lg hover:underline"
+                    >
+                      Return Policy
+                    </a>
                   </div>
           </motion.div>
 

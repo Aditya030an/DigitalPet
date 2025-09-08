@@ -267,14 +267,14 @@ function App() {
               img: vivek,
               name: "Dr. Vivek K Maurya",
               specialty: "MVSc (Veterinary Medicine) | 3+ Years",
-              qualification: " Companion animal, Avian and Exotic Animal veterinarian ",
+              qualification: " Companion Animal, Avian & Exotic Animal Veterinarian ",
               instagram: "https://www.instagram.com/vet_wizard?igsh=ZnJuYXF6cTJtNnF4",
               facebook: "https://www.facebook.com/profile.php?id=61567724497242&mibextid=ZbWKwL",
             },
             {
               img: vishal,  // Directly specify the path here
               name: "Dr. Vishal Patel",
-              specialty: " Senior Veterinarian,MVSc (Veterinary Clinical Medicine, Ethics & Jurisprudence) | 7+ Years",
+              specialty: " Senior Veterinarian, MVSc (Veterinary Clinical Medicine, Ethics & Jurisprudence) | 7+ Years",
               qualification: "Avian & Exotic Animal Medicine, Rehabilitation Medicine, Kitchen Medicine & Diet Management. ",
               instagram: "https://www.instagram.com/dr_vishal_patel_21?igsh=bjNzbjNtNm9sNmky",
               facebook: "https://www.facebook.com/profile.php?id=61567724497242&mibextid=ZbWKwL",

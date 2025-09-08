@@ -1,5 +1,3 @@
-
-
 // import React, { useState } from "react";
 // import { motion } from "framer-motion";
 // import { FaStar } from "react-icons/fa";
@@ -121,7 +119,6 @@
 //             </select>
 //           </div>
 
-        
 //           <motion.button
 //   whileHover={{ scale: 1.04 }}
 //   whileTap={{ scale: 0.98 }}
@@ -150,8 +147,6 @@
 // </motion.a>
 //         </form>
 
-    
-
 //         {result && (
 //           <p className="mt-6 text-center text-green-600 font-medium text-sm">{result}</p>
 //         )}
@@ -160,11 +155,10 @@
 //   );
 // }
 
-
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { collection, addDoc } from 'firebase/firestore';
-import { useFeedback } from '../context/FeedbackContext';
+import { collection, addDoc } from "firebase/firestore";
+import { useFeedback } from "../context/FeedbackContext";
 import db from "../firebase";
 
 export default function Contact() {
@@ -186,7 +180,9 @@ export default function Contact() {
     });
 
     const data = await response.json();
-    setResult(data.success ? "✅ Query submitted successfully!" : `❌ ${data.message}`);
+    setResult(
+      data.success ? "✅ Query submitted successfully!" : `❌ ${data.message}`
+    );
     event.target.reset();
     setRating(0);
   };
@@ -222,10 +218,12 @@ export default function Contact() {
             { label: "Instagram ID", required: false },
             { label: "State", required: true },
             { label: "Country", required: true },
-            { label: "Pet Name", required: false }
+            { label: "Pet Name", required: false },
           ].map((field, i) => (
             <div key={i}>
-              <label className="block text-gray-800 font-semibold mb-1">{field.label}</label>
+              <label className="block text-gray-800 font-semibold mb-1">
+                {field.label}
+              </label>
               <input
                 type="text"
                 name={field.label.replace(" ", "_").toLowerCase()}
@@ -236,7 +234,9 @@ export default function Contact() {
           ))}
 
           <div>
-            <label className="block text-gray-800 font-semibold mb-1">Pet Category</label>
+            <label className="block text-gray-800 font-semibold mb-1">
+              Pet Category
+            </label>
             <select
               name="Pet_category"
               required
@@ -249,7 +249,9 @@ export default function Contact() {
           </div>
 
           <div>
-            <label className="block text-gray-800 font-semibold mb-1">Your Query</label>
+            <label className="block text-gray-800 font-semibold mb-1">
+              Your Query
+            </label>
             <textarea
               name="message"
               rows="4"
@@ -260,13 +262,20 @@ export default function Contact() {
           </div>
 
           <div>
-            <label className="block text-gray-800 font-semibold mb-1">Preferred Contact Method</label>
+            <label className="block text-gray-800 font-semibold mb-1">
+              Preferred Contact Method
+            </label>
             <select
               name="How do you wish to be contacted"
               required
-              className="w-full px-5 py-4 border border-gray-200 rounded-xl bg-white/90 shadow-sm focus:ring-2 focus:ring-indigo-500 transition-all"
+              className="w-full    md:w-1/2       px-5 py-4 border border-gray-200 rounded-xl bg-white/90 shadow-sm focus:ring-2 focus:ring-indigo-500 transition-all"
             >
-              {["-- Select an option--", "Instagram", "Facebook", "WhatsApp"].map((option) => (
+              {[
+                "-- Select an option--",
+                "Instagram",
+                "Facebook",
+                "WhatsApp",
+              ].map((option) => (
                 <option key={option}>{option}</option>
               ))}
             </select>
@@ -283,7 +292,9 @@ export default function Contact() {
 
           <div className="flex items-center my-6">
             <div className="flex-grow h-px bg-gray-300"></div>
-            <span className="mx-4 text-sm text-gray-500 uppercase font-semibold tracking-wider">or</span>
+            <span className="mx-4 text-sm text-gray-500 uppercase font-semibold tracking-wider">
+              or
+            </span>
             <div className="flex-grow h-px bg-gray-300"></div>
           </div>
 
@@ -298,7 +309,9 @@ export default function Contact() {
         </form>
 
         {result && (
-          <p className="mt-6 text-center text-green-600 font-medium text-sm">{result}</p>
+          <p className="mt-6 text-center text-green-600 font-medium text-sm">
+            {result}
+          </p>
         )}
       </motion.div>
 
