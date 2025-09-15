@@ -170,12 +170,15 @@ function App() {
 
     {/* CTA Button */}
     <div className="mt-10">
-      <a
-        href="#book-now"
-        className="inline-block bg-[#006533] hover:bg-[#004F29] text-white font-semibold py-4 px-10 rounded-full text-lg shadow-xl transition duration-300"
-      >
-        🩺 Book a Consultation
-      </a>
+     <a
+  href="https://wa.me/919424094362?text=Hello%2C%20Digital%20Pet%20Clinic!%20I'd%20like%20to%20book%20an%20appointment"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block bg-[#006533] hover:bg-[#004F29] text-white font-semibold py-4 px-10 rounded-full text-lg shadow-xl transition duration-300"
+>
+  🩺 Book a Consultation
+</a>
+
     </div>
 
     {/* Stat Card */}

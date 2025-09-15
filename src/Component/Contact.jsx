@@ -214,8 +214,6 @@ export default function Contact() {
             { label: "Full Name", required: true },
             { label: "Email", required: true },
             { label: "Phone", required: true },
-            { label: "Facebook ID", required: false },
-            { label: "Instagram ID", required: false },
             { label: "State", required: true },
             { label: "Country", required: true },
             { label: "Pet Name", required: false },
@@ -261,24 +259,38 @@ export default function Contact() {
             />
           </div>
 
-          <div>
-            <label className="block text-gray-800 font-semibold mb-1">
-              Preferred Contact Method
-            </label>
-            <select
-              name="How do you wish to be contacted"
-              required
-              className="w-full    md:w-1/2       px-5 py-4 border border-gray-200 rounded-xl bg-white/90 shadow-sm focus:ring-2 focus:ring-indigo-500 transition-all"
-            >
-              {[
-                "-- Select an option--",
-                "Instagram",
-                "Facebook",
-                "WhatsApp",
-              ].map((option) => (
-                <option key={option}>{option}</option>
-              ))}
-            </select>
+          <div className="flex items-center justify-between flex-wrap  ">
+            <div className="w-1/2">
+              <label className="block text-gray-800 font-semibold mb-1">
+                Preferred Contact Method
+              </label>
+              <select
+                name="How do you wish to be contacted"
+                required
+                className="w-full    md:w-1/2       px-5 py-4 border border-gray-200 rounded-xl bg-white/90 shadow-sm focus:ring-2 focus:ring-indigo-500 transition-all"
+              >
+                {[
+                  "-- Select an option--",
+                  "Instagram",
+                  "Facebook",
+                  "WhatsApp",
+                  "Email",
+                ].map((option) => (
+                  <option key={option}>{option}</option>
+                ))}
+              </select>
+            </div>
+            <div className="w-1/2">
+              <label className="block text-gray-800 font-semibold mb-1">
+                Enter Id
+              </label>
+              <input
+                type="text"
+                name="Id"
+                required
+                className="w-full px-5 py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white/90 backdrop-blur-lg shadow-sm transition-all duration-300"
+              />
+            </div>
           </div>
 
           <motion.button
@@ -299,7 +311,9 @@ export default function Contact() {
           </div>
 
           <motion.a
-            href="/Bookconsultation"
+            href="https://wa.me/919424094362?text=Hello%2C%20Digital%20Pet%20Clinic!%20I'd%20like%20to%20book%20an%20appointment"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.96 }}
             className="block w-full text-center py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-lg font-semibold shadow-lg hover:from-emerald-600 hover:to-teal-600 transition-all"
